@@ -1,0 +1,7 @@
+.wp-block-button .wp-block-button__link {
+  @apply px-5 py-2 font-extrabold! transition-all duration-200 ease-in-out tracking-wider;
+}
+
+.wp-block-button.is-style-primary-button .wp-block-button__link {
+  @apply bg-amber hover:bg-amber-600;
+}

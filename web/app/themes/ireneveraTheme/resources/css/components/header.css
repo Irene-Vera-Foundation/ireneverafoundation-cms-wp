@@ -1,0 +1,11 @@
+header.banner.scrolled {
+  @apply bg-yellow-50/80;
+}
+
+header.banner.scrolled .brand img {
+  @apply brightness-100 invert-0;
+}
+
+header.banner.scrolled .menu-link {
+  @apply text-yellow;
+}

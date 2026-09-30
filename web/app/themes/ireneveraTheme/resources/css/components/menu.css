@@ -1,0 +1,17 @@
+.menu .top-line.open {
+  transform: translate(-50%) rotate(45deg);
+  top: 50%;
+  transform-origin: center;
+}
+.menu .bottom-line.open {
+  transform: translateX(-50%) rotate(-45deg);
+  top: 50%;
+  transform-origin: center;
+}
+.menu .middle-line.open {
+  opacity: 0;
+}
+.hidden-header {
+  transform: translateY(-100%);
+  top: 0 !important;
+}

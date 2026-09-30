@@ -1,0 +1,54 @@
+@import 'tailwindcss' theme(static);
+@source "../views/";
+@source "../../app/";
+
+@import './theme.css';
+@import './utlities.css';
+
+@import './components/header.css';
+@import './components/menu.css';
+@import './gutenberg/wp-button.css';
+@import './gutenberg/wp-columns.css';
+@import './gutenberg/wp-image.css';
+
+@import './form.css';
+
+* {
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body
+  .alignfull.is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  @apply mx-auto px-4 laptop:px-12;
+}
+
+body
+  .alignfull.is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  @apply site-container;
+}
+
+.alignfull,
+.alignwide,
+body .is-layout-constrained > .alignwide {
+  max-width: 1000%;
+  width: auto;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+}
+
+.stretched-link::after {
+  @apply content-[''] absolute w-full h-full z-2 inset-0;
+}
+
+a {
+  @apply no-underline!;
+}
